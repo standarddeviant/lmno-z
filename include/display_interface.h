@@ -1,0 +1,6 @@
+#ifndef DISPLAY_INTERFACE_HEADER_SEEN
+#define DISPLAY_INTERFACE_HEADER_SEEN
+
+void setup_display_interface(void);
+
+#endif // DISPLAY_INTERFACE_HEADER_SEEN
