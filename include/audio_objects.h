@@ -8,6 +8,8 @@
 #include <SerialFlash.h>
 #include "rhythm.h"
 
+#define NUM_DRUMS (3)
+
 // GUItool: begin automatically generated code
 extern AudioSynthSimpleDrum     drumKick;        //xy=796,136
 extern AudioSynthSimpleDrum     drumSnare;       //xy=796,191
@@ -25,6 +27,12 @@ extern AudioControlSGTL5000     sgtl5000_1;      //xy=1121,435
 extern rhythm_t ryKick;
 extern rhythm_t rySnare;
 extern rhythm_t ryHiHat;
+
+extern AudioSynthSimpleDrum *objDrumList[NUM_DRUMS];
+extern rhythm_t *ryDrumList[NUM_DRUMS];
+
 void setup_audio_objects(void);
+
+
 
 #endif // AUDIO_OBJECTS_HEADER_SEEN

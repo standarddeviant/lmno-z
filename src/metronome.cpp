@@ -16,3 +16,13 @@ volatile unsigned int g_pulse_count = 0;
 void metronome_isr(void) {
     g_pulse_count++;
 }
+
+void setup_metronome(void) {
+    g_metronome.begin(metronome_isr, g_pulse_micros);
+}
+
+void set_tempo_bpm(float in_tempo_bpm) {
+    g_tempo_bpm = in_tempo_bpm;
+    g_pulse_micros = PULSE_MICROS();
+    g_metronome.update(g_pulse_micros);
+}

@@ -31,7 +31,6 @@ AudioConnection          patchCordM6(mixerR,      0, i2sOut, 1);
 AudioControlSGTL5000     sgtl5000_1;     //xy=1121,435
 // GUItool: end automatically generated code
 
-#define NUM_DRUMS (3)
 AudioSynthSimpleDrum *objDrumList[NUM_DRUMS] {&drumKick, &drumSnare, &drumHiHat};
 rhythm_t ryKick;
 rhythm_t rySnare;
