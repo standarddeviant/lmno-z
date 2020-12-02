@@ -27,5 +27,7 @@ void loop() {
         } // end for(NUM_DRUMS...)
     } // 
 
+    update_display_interface();
+
     // put your main code here, to run repeatedly:
 }

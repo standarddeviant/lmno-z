@@ -76,5 +76,6 @@
 
 
 void setup_display_interface(void);
+void update_display_interface(void);
 
 #endif // DISPLAY_INTERFACE_HEADER_SEEN
